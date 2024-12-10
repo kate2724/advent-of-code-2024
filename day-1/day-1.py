@@ -4,7 +4,7 @@
 
 col1 = []
 col2 = []
-with open('input.txt', 'r') as f:
+with open('day-1/input.txt', 'r') as f:
     for line in f:
         num1, num2 = line.strip().split()
         col1.append(int(num1))
