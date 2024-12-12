@@ -1,5 +1,3 @@
-import re
-import numpy
 with open('day-4/input.txt') as f:
 # with open('day-4/example.txt') as f:
     crossword = f.read()
@@ -30,10 +28,5 @@ with open('day-4/input.txt') as f:
             if rows[i][j] == 'S' and rows[i+1][j] == 'A' and rows[i+2][j] == 'M' and rows[i+3][j] == 'X':
                 backwardsVertical+=1
 
-    # print(forwards)
-    # print(backwards)
-    # print(vertical)
-    # print(backwardsVertical)
-    # print(diagonal)
     sum = forwards + backwards + vertical + backwardsVertical + diagonal
     print(sum)
